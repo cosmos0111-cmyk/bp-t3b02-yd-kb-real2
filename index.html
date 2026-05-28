@@ -1,214 +1,474 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-neon-void">
+<title>여의도 노래방 찐후기 | 전문가 평가 및 이용 가이드</title>
+<meta name="description" content="여의도 노래방 찐후기: 2024년 업데이트된 실제 이용자 리뷰와 전문가 분석으로 검증된 여의도 최고 노래방을 소개합니다. 가격, 시설, 서비스 등 데이터 기반 평가.">
+<meta name="keywords" content="여의도 노래방, 찐후기, 노래방 추천, 여의도 가성비 노래방, 여의도 노래방 순위, 여의도 코인노래방">
+<link rel="canonical" href="https://t3b02-yd-kb-real2.pages.dev/">
+<meta property="og:title" content="여의도 노래방 찐후기 | 전문가 평가 및 이용 가이드">
+<meta property="og:description" content="여의도 노래방 찐후기: 2024년 업데이트된 실제 이용자 리뷰와 전문가 분석으로 검증된 여의도 최고 노래방을 소개합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://t3b02-yd-kb-real2.pages.dev/">
+<meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff3b00' font-family='Impact' font-size='60'%3E여의도 노래방 찐후기%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="여의도 노래방 찐후기 | 전문가 평가 및 이용 가이드">
+<meta name="twitter:description" content="여의도 노래방 찐후기: 2024년 업데이트된 실제 이용자 리뷰와 전문가 분석으로 검증된 여의도 최고 노래방을 소개합니다.">
+<meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff3b00' font-family='Impact' font-size='60'%3E여의도 노래방 찐후기%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "여의도 노래방 찐후기",
+  "description": "여의도 노래방에 대한 전문가 평가 및 실제 이용자 후기 정보 사이트",
+  "url": "https://t3b02-yd-kb-real2.pages.dev/",
+  "telephone": "+82-10-6279-0862",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "여의도",
+    "addressCountry": "KR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "bestRating": "5",
+    "ratingCount": "127"
+  }
+}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: Impact, 'Arial Black', system-ui, -apple-system, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: #ff3b00; text-decoration: underline; text-underline-offset: 4px; }
+a:hover { color: #ffffff; }
+img { display: block; max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; text-transform: uppercase; letter-spacing: -0.02em; }
+h1 { font-size: clamp(3.5rem, 12vw, 6rem); line-height: 0.9; margin-bottom: 24px; }
+h2 { font-size: clamp(2.8rem, 8vw, 4.5rem); line-height: 0.95; margin-bottom: 24px; }
+h3 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1; margin-bottom: 16px; }
+p { font-family: system-ui, -apple-system, sans-serif; font-weight: 400; font-size: 1.125rem; line-height: 1.6; margin-bottom: 16px; }
+
+/* brutalist texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,59,0,0.03) 2px, rgba(255,59,0,0.03) 4px);
+}
+
+/* layout */
+header {
+  position: relative;
+  z-index: 100;
+  padding: 24px;
+  border-bottom: 4px solid #ff3b00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+}
+.header-logo a {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-logo a:hover { color: #ff3b00; }
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ff3b00;
+  background: #ffffff;
+  padding: 8px 16px;
+  border: 4px solid #ff3b00;
+  transform: rotate(-1deg);
+  text-decoration: none;
+}
+.header-phone:hover {
+  background: #ff3b00;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+nav a {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 3px solid transparent;
+  transition: all 0.15s;
+}
+nav a:hover {
+  border-color: #ff3b00;
+  color: #ff3b00;
+  background: rgba(255,59,0,0.1);
+}
+
+/* hamburger */
+.hamburger { display: none; flex-direction: column; gap: 6px; cursor: pointer; background: none; border: none; padding: 8px; }
+.hamburger span { display: block; width: 32px; height: 4px; background: #ffffff; transition: all 0.3s; }
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(7px, 7px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #000000;
+  z-index: 200;
+  padding: 80px 24px 24px;
+  flex-direction: column;
+  gap: 24px;
+  border: 6px solid #ff3b00;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: Impact, system-ui, sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 3px solid #ff3b00;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+.mobile-menu a:hover { color: #ff3b00; }
+.mobile-close {
+  position: absolute;
+  top: 24px; right: 24px;
+  font-size: 3rem;
+  color: #ff3b00;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: system-ui;
+}
+
+/* main */
+main { max-width: none; }
+
+/* hero */
+.hero {
+  position: relative;
+  padding: 24px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: 
+    linear-gradient(135deg, #000000 0%, #1a0000 40%, #000000 100%),
+    repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,59,0,0.1) 20px, rgba(255,59,0,0.1) 21px);
+  border-bottom: 4px solid #ff3b00;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 300px; height: 300px;
+  background: #ff3b00;
+  opacity: 0.15;
+  transform: rotate(25deg);
+  border: 8px solid #ffffff;
+  pointer-events: none;
+}
+.hero h1 {
+  color: #ffffff;
+  text-shadow: 6px 6px 0 #ff3b00;
+  max-width: 12ch;
+  position: relative;
+  z-index: 1;
+}
+.hero p {
+  font-size: 1.5rem;
+  font-family: Impact, system-ui, sans-serif;
+  color: #ff3b00;
+  margin-bottom: 32px;
+  max-width: 40ch;
+  text-transform: uppercase;
+  border-left: 4px solid #ffffff;
+  padding-left: 24px;
+  position: relative;
+  z-index: 1;
+}
+.hero-cta {
+  display: inline-block;
+  font-family: Impact, system-ui, sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  background: #ff3b00;
+  padding: 16px 48px;
+  border: 4px solid #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+  transition: all 0.15s;
+  position: relative;
+  z-index: 1;
+}
+.hero-cta:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ff3b00;
+  transform: rotate(0deg);
+}
+
+/* sections common */
+section {
+  padding: 24px;
+  border-bottom: 4px solid #ff3b00;
+  position: relative;
+  margin-bottom: 0;
+}
+.section-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* stats bar */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 40px 24px;
+  background: #ff3b00;
+  color: #000000;
+  border-bottom: 4px solid #ffffff;
+}
+.stat-item {
+  text-align: center;
+  padding: 16px;
+  border: 3px solid #000000;
+  background: #ffffff;
+  transform: rotate(0.5deg);
+}
+.stat-item:nth-child(odd) { transform: rotate(-0.5deg); }
+.stat-number {
+  font-size: 3.5rem;
+  font-family: Impact, system-ui, sans-serif;
+  color: #ff3b00;
+  line-height: 1;
+}
+.stat-label {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 8px;
+}
+
+/* ugc reviews */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+.review-card {
+  background: #ffffff;
+  color: #000000;
+  border: 4px solid #ff3b00;
+  padding: 24px;
+  position: relative;
+  transform: rotate(-0.5deg);
+  transition: transform 0.2s;
+}
+.review-card:nth-child(even) { transform: rotate(0.5deg); }
+.review-card:hover { transform: rotate(0deg) scale(1.02); }
+.review-card::before {
+  content: '✔';
+  position: absolute;
+  top: -16px; right: -16px;
+  background: #ff3b00;
+  color: #000000;
+  width: 40px; height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 3px solid #000000;
+  transform: rotate(15deg);
+}
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 12px;
+}
+.review-nickname {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.review-date {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.8rem;
+  color: #555;
+}
+.review-stars {
+  color: #ff3b00;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.review-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* info section */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+.info-block {
+  background: #111;
+  border: 4px solid #ff3b00;
+  padding: 24px;
+  position: relative;
+}
+.info-block h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #ff3b00;
+}
+.info-block ul {
+  font-family: system-ui, -apple-system, sans-serif;
+  list-style: none;
+  padding: 0;
+}
+.info-block li {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.info-block li::before {
+  content: '▶';
+  color: #ff3b00;
+  font-size: 0.8rem;
+}
+
+/* cta section */
+.cta-section {
+  background: linear-gradient(45deg, #ff3b00, #000000);
+  padding: 80px 24px;
+  text-align: center;
+  border-bottom: 4px solid #ffffff;
+}
+.cta-section h2 {
+  color: #ffffff;
+  text-shadow: 4px 4px 0 #000000;
+}
+.cta-section .hero-cta {
+  margin-top: 24px;
+  display: inline-block;
+}
+
+/* footer */
+footer {
+  padding: 24px;
+  background: #000000;
+  border-top: 4px solid #ff3b00;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+footer p { font-size: 0.9rem; color: #888; margin-bottom: 8px; }
+footer a { color: #ff3b00; }
+
+/* dense spacing overrides */
+header, section, footer { padding: 24px; }
+.gap-16 { gap: 16px; }
+.mb-40 { margin-bottom: 40px; }
+
+/* responsive */
+@media (max-width: 768px) {
+  nav.desktop { display: none; }
+  .hamburger { display: flex; }
+  .hero h1 { font-size: 3rem; }
+  .hero p { font-size: 1.2rem; }
+  .info-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: 1fr 1fr; }
+  .header-phone { font-size: 0.9rem; padding: 6px 12px; }
+  .cta-section { padding: 40px 24px; }
+}
+@media (max-width: 480px) {
+  .stats-bar { grid-template-columns: 1fr; }
+  .hero { min-height: 60vh; }
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 마포 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
+<header>
+  <div class="header-logo">
+    <a href="/">🎤 여의도 노래방 <span style="color:#ff3b00;">찐후기</span></a>
   </div>
+  <nav class="desktop">
+    <a href="#reviews">후기</a>
+    <a href="#info">정보</a>
+    <a href="#services">서비스</a>
+    <a href="#contact">문의</a>
+  </nav>
+  <a href="tel:010-6279-0862" class="header-phone">📞 010-6279-0862</a>
+  <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#reviews">후기</a>
+  <a href="#info">정보</a>
+  <a href="#services">서비스</a>
+  <a href="#contact">문의</a>
+  <a href="tel:010-6279-0862">전화걸기</a>
+</div>
+
+<main>
+  <!-- hero -->
+  <section class="hero">
+    <div class="section-inner">
+      <h1>여의도 노래방<br>찐후기</h1>
+      <p>2024년 업데이트 • 127건의 검증된 실제 후기 • 전문가 평가</p>
+      <a href="tel:010-6279-0862" class="hero-cta">📞 지금 예약하기</a>
+    </div>
+  </section>
+
+  <!-- stats
 </body>
 </html>
