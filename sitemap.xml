@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://t3b02-yd-kb-real2.pages.dev/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://t3b02-yd-kb-real2.pages.dev/about.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/posts/field_note-002-thaaf8.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://t3b02-yd-kb-real2.pages.dev/blog.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://t3b02-yd-kb-real2.pages.dev/feed.xml</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>daily</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/posts/guide-003.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/posts/review-001-thaaf8.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/posts/review-001.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/posts/review-002.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cosmos0111-cmyk.github.io/bp-t3b02-yd-kb-real2/feed.xml</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
